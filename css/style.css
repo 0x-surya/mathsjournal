@@ -542,6 +542,11 @@ Left column content Starts
     color: #222222;
     font-weight: 600;
 }
+@media only screen and (max-width:460px) {
+    .otherinfo .issn {
+        width: 100%;
+    }
+}
 /* ---------------------
 Right content Starts
 --------------------- */
@@ -624,4 +629,13 @@ Right content Starts
         flex-direction: column;
         align-items: flex-start;
     }
+}
+/* ---------------------
+Terms & Condition Page
+--------------------- */
+.termspage .overcontent h4 {
+    margin: 14px 0px;
+}
+.termspage .overcontent p {
+    font-size: 16px;
 }
