@@ -1,0 +1,108 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* ---------------------
+    Header Starts
+--------------------- */
+.header {
+    height: 100%;
+    width: 100%;
+    border-bottom:2px solid #01324b;
+}
+.header .topbar {
+    height: 80px;
+    width: 80%;
+}
+.topbar .logo a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700;
+}
+.header hr {
+    color: #025E8D;
+    border: 1px solid #025E8D;
+    margin: 0px;
+}
+/* ---------------------
+    signup Form Starts
+--------------------- */
+main {
+    background: #DADADA;
+}
+label {
+    font-weight: 600;
+    color: #01324b;
+    margin-bottom: 4px;
+}
+.box8{
+    background: white;
+}
+form .form-group {
+    margin: 6px 0px;
+}
+form .btn {
+    background: #01324b;
+    color: white;
+}
+form .btn:hover {
+    background: #222222;
+    color: white;
+}
+form .note {
+    border: 1px solid #01324b;
+    padding: 4px 6px;
+    border-radius: 10px;
+}
+form .form-group iconify-icon {
+    font-size: 30px;
+    height: 20px;
+    color: #01324b;
+}
+@media only screen and (max-width:460px) {
+   form {
+    padding: 10px 20px;
+   }
+   .box8 {
+    padding: 30px !important;
+   }
+}
+/* ---------------------
+    Footer Starts
+--------------------- */
+.footer {
+    height: 100%;
+    width: 100%;
+    background: #01324b;
+}
+.footer .navlinks {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .navlinks a {
+    color: white;
+    font-size: 17px;
+}
+.footer .copyfooter {
+    width: 100%;
+}
+.footer .copyfooter a {
+    text-decoration: none;
+}
+.footer .copyfooter h3 {
+    color: white;
+}
+.footer .copyfooter p {
+    color: white;
+}
+@media only screen and (max-width:460px) {
+    .footer .navlinks {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

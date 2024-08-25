@@ -6,7 +6,7 @@
     <title>Newrains International Journal of Applied and Pure Mathematics - Login</title>
     <!-- Bootstrap CSS  -->
      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-     <link rel="stylesheet" href="./css/form.css">
+     <link rel="stylesheet" href="./css/signup.css">
 </head>
 <body>
     <header class="header">
@@ -18,19 +18,29 @@
         <hr>
     </header>
     <main>
-        <section class="login d-flex justify-content-center align-items-center">
-            <div class="formcontainer m-5">
-                <div class="note">
-                    <p><iconify-icon icon="material-symbols:info"></iconify-icon>Enter your email address to update your account to the new Newrains login on Newrains.</p>
+        <div class="container py-5">
+            <form>
+              <div class="row d-flex justify-content-center align-items-center">
+                <div class="col-md-8 jumbotron box8 p-5">
+                  <div class="note form-group">
+                    <p class="my-1"><iconify-icon icon="material-symbols:info"></iconify-icon>Enter your email address to update your account to the new Newrains login on Newrains.</p>
+                  </div>  
+                  <div class="col-sm-12 my-4">
+                        <h2 class="">Log in, or register a new account to continue</h2>
+                    </div>
+
+                    <div class="col-sm-12 form-group mb-4">
+                        <label>Email</label>
+                        <input type="text" class="form-control" placeholder="Enter your user name." required>
+                    </div>
+
+                    <div class="col-sm-12 form-group mb-3 text-center">
+                        <button class="btn w-100">Register</button>
+                    </div>
                 </div>
-                <h2>Log in, or register a new account to continue</h2>
-                <form action="" class="loginform py-5">
-                    <label for="">Email Address</label>
-                    <input type="email" name="" id="">
-                    <button>Continue <iconify-icon icon="basil:arrow-right-solid"></iconify-icon></button>
-                </form>
-            </div>
-        </section>
+              </div>
+            </form>
+        </div>
     </main>
     <footer class="footer py-3">
         <div class="navlinks px-4">
