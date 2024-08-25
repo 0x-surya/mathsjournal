@@ -639,3 +639,87 @@ Terms & Condition Page
 .termspage .overcontent p {
     font-size: 16px;
 }
+/* ---------------------
+Articles Page
+--------------------- */
+.articlecon {
+    height: 50px;
+    width: 100%;
+    background: #F0F7FC;
+    border-left: 10px solid #01324b;
+}
+.articlecon {
+    height: 50px;
+    width: 100%;
+    background: #F0F7FC;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.articlecon a {
+    margin-left: 30px;
+    color: #01324b;
+    font-weight: 700;
+}
+.articlecon a iconify-icon {
+    height: 18px;
+    font-size: 26px;
+}
+.articlefil {
+    height: 100%;
+    width: 100%;
+    background: #F0F7FC;
+}
+.articlefil .col-md-5, .articlefil .col-md-3 {
+    border-left: 1px solid #01324b;
+}
+.articlefil .volumes {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.articlefil .volumes p{
+    margin: 0px 6px;
+    font-weight: 700;
+}
+.articlefil .volumes select {
+    height: 40px;
+    padding: 0px 10px;
+}
+.articlefil .dates {
+    height: 50px;
+    width: 96%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.articlefil .dates label {
+    font-weight: 600;
+}
+.articlefil .dates p{
+    margin: 0px 6px;
+    font-weight: 700;
+}
+.articlecon .col-md-3 {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.articlefil .col-md-3 a button {
+    padding: 10px 26px;
+    color: #fff;
+    background: #01324b;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid #01324b;
+    border-radius: 20px;
+}
+@media only screen and (max-width:460px) {
+    .articlecon {
+        height: 100%;
+    }
+}
