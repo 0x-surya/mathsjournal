@@ -1,0 +1,627 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* ---------------------
+    Header Starts
+--------------------- */
+.header {
+    height: 100%;
+    width: 100%;
+    border-bottom:2px solid #01324b;
+}
+.header .topbar {
+    height: 80px;
+    width: 80%;
+}
+.topbar .logo a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700;
+}
+.topbar .action a {
+    color: #222222;
+    font-weight: 700;
+    text-decoration: none;
+}
+.header hr {
+    color: #025E8D;
+    border: 1px solid #025E8D;
+    margin: 0px;
+}
+.menubar {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.menubar .navbar {
+    width: 39%;
+}
+.menubar .navbar .nav-link {
+    color: #222222;
+    font-weight: 700;
+}
+.menubar .navbar .nav-item  {
+    color: #222222;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menubar .navbar .nav-item p {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    margin-left: 2px;
+}
+.menubar .navextra {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.menubar .navextra .info{
+    width: 50%;
+    display: flex;
+    color: #222222;
+    font-weight: 700;
+}
+.menubar .divider {
+    height: 40px;
+    width: 3px;
+    background: #025E8D;
+    margin: 0px 6px;
+}
+.navextra .info .search p{
+    height: 10px;
+}
+.navextra .cart{
+    width: 50%;
+}
+.navextra .cart a{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700;
+}
+.navextra .cart a p{
+    height: 10px;
+}
+.header .collapse .card {
+    border: 0px !important;
+    background: #F0F7FC;
+    height: 100px;
+    width: 100%;
+}
+.card .searchcon {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.searchcon p {
+    font-weight: 700;
+    width: 40%;
+    text-align: left;
+    margin: 6px 0px;
+}
+.searchcon .wrap {
+    width: 40%;
+}
+.searchcon .search {
+    width: 100%;
+    position: relative;
+    display: flex;
+  }
+  
+.search .searchTerm {
+    width: 100%;
+    border: 3px solid #025E8D;
+    border-right: none;
+    padding: 5px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #9DBFAF;
+}
+
+.search .searchTerm:focus{
+    color: #025E8D;
+}
+
+.search .searchButton {
+    width: 40px;
+    height: 36px;
+    border: 1px solid #025E8D;
+    background: #025E8D;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.search .wrap{
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+@media only screen and (max-width:460px) {
+    .menubar {
+        height: 100%;
+        flex-direction: column;
+    }
+    .menubar .navbar {
+        width: 100%;
+    }   
+    .menubar .divider {
+        display: none;
+    }
+    .menubar .navextra {
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .navextra .info {
+        width: 100%;
+    }
+    .navextra .cart {
+        width: 100%;
+        justify-content: flex-end !important;
+    }
+    .navextra .cart a{
+        width: 50%;
+    }
+    .searchcon p {
+        width: 80%;
+    }
+    .searchcon .wrap {
+        width: 80%;
+    }
+}
+/* ---------------------
+Journal Header Starts
+--------------------- */
+.journalheader {
+    height: 340px;
+    width: 100%;
+    background: #644B00;
+}
+.journalheader .breadmain {
+    height: 10%;
+    width: 84%;
+}
+.breadmain .breadcrumb .breadcrumb-item {
+    color: white !important;
+}
+.breadmain .breadcrumb .breadcrumb-item::before {
+    color: white !important;
+}
+.breadmain .breadcrumb .breadcrumb-item a{
+    color: white !important;
+}
+.journalheader .content {
+    width: 90%;
+    height: 90%;
+}
+.content .bookwrapper1 {
+    height: 100%;
+    width: 20%;
+}
+.bookwrapper1 img {
+    border-radius: 8px;
+}
+.content .bookinfo {
+    width: 50%;
+    height: 100%;
+    color: white;
+}
+.content .bookinfo a {
+    color: white;
+    font-weight: 700;
+}
+.content .bookinfo a button{
+    padding: 10px 26px;
+    color: #01324b;
+    font-size: 18px;
+    font-weight: 600;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+.content .bookinfo a button iconify-icon{
+    height:14px;
+}
+.content .bookwrapper2 {
+    width: 20%;
+    height: 100%;
+}
+.content .bookwrapper2 a {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .bookwrapper2 a img {
+    height: 50%;
+    border-radius: 50%;
+}
+@media only screen and (max-width:768px) {
+    .journalheader {
+        height:100%;
+        width: 100%;
+    }
+    .journalheader .content {
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap !important;
+        flex-direction: column-reverse;
+    }
+    .content .bookwrapper1 {
+        width: 36%;
+        margin: 20px 0px;
+    }
+    .content .bookinfo {
+        width: 64%;
+        align-items: center !important;
+    }
+    .content .bookwrapper2 {
+        margin: 20px 0px;
+        width: 100%;
+    }
+    .content .bookwrapper2 a {
+        height: 160px;
+    }
+    .content .bookwrapper2 a img {
+        height: 100% !important;
+    }
+}
+@media only screen and (max-width:460px) {
+    .journalheader .breadmain {
+        display: none;
+    }
+    .content .bookwrapper1 {
+        width: 100%;
+        margin: 6px 0px;
+        display: none !important;
+    }
+    .content .bookwrapper1 a{
+        width:90%;
+        text-align: left;
+    }
+    .content .bookinfo {
+        width:100%;
+        margin: 6px 0px;
+        padding: 0px 20px;
+    }
+    .content .bookwrapper2 {
+        width: 100%;
+        margin: 6px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content .bookwrapper2 a{
+        width: 90%;
+        justify-content: flex-start !important;
+    }
+}
+/* ---------------------
+Inside Page Nav Starts
+--------------------- */
+.insidenav {
+    height: 100%;
+    width: 100%;
+}
+.insidenav .btngrp {
+    width: 100%;
+}
+.btngrp a button {
+    background: #F0F7FC;
+    color: #01324b;
+    font-weight: 600;
+    text-decoration: underline;
+    padding: 6px 16px;
+    border: 1px solid #F0F7FC;
+    border-radius: 20px;
+}
+.btngrp a button iconify-icon {
+    height: 14px;
+    margin: 0px 5px;
+}
+@media only screen and (max-width:768px) {
+    .insidenav .btngrp {
+        height: 100%;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+    .btngrp a button {
+        margin: 6px 0px;
+    }
+}
+/* ---------------------
+Inside content Starts
+--------------------- */
+/* ---------------------
+Left column content Starts
+--------------------- */
+.content .row .col-lg-9 {
+    height: 100%;
+}
+.content .row .col-lg-9 h3 {
+    font-weight: 700;
+}
+.col-lg-9 .overcontent {
+    height: 100%;
+    width: 100%;
+    background: #F0F7FC;
+    border-radius: 10px;
+    font-size: 18px;
+}
+.overcontent p {
+    margin: 0px;
+    text-align: justify;
+}
+.overcontent p.imp {
+    font-weight: 650;
+}
+.overcontent ul {
+    margin-top: 20px;
+    text-align: justify;
+    font-weight: 500;
+}
+.overcontent .status iconify-icon {
+    display: flex;
+    height: 46px !important;
+    width: 11% !important;
+    border: 1px solid black;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+}
+.content .row .col-lg-3 h3 {
+    font-weight: 700;
+}
+@media only screen and (max-width:460px) {
+    .content {
+        padding: 0px 24px !important;
+    }
+    .content .overcontent {
+        padding: 20px !important;
+    }
+    .overcontent .status iconify-icon {
+        width: 20% !important;
+    }
+    .overcontent .status .statusinfo {
+        width: 80%;
+    }
+    .overcontent .status p {
+        font-size: 14px;
+        text-align: start;
+    }
+    .overcontent .status h5 {
+        font-size: 16px !important;
+        text-align: start;
+    }
+}
+.latest {
+    height: 150px;
+    width: 100%;
+}
+.latest .wrapper {
+    height: 100%;
+    width: 16%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.latest .wrapper img {
+    height: 100%;
+}
+.latest .latestinfo {
+    height: 100%;
+    width: 84%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+.latestinfo p {
+    font-weight: 700;
+}
+.latestinfo p span {
+    border-left: 2px solid #9DBFAF;
+    margin-left: 6px;
+    padding-left: 6px;
+}
+.latestinfo p span a {
+    color: #025E8D;
+}
+.latestinfo a button {
+    color: #025E8D;
+    padding: 10px 40px;
+    border: 2px solid #025E8D;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 30px;
+    background: white;
+}
+.latestinfo a button iconify-icon {
+    font-size: 28px;
+    font-weight: 800;
+    height: 20px;
+}
+@media only screen and (max-width:768px) {
+    .latest {
+        flex-wrap: wrap;
+    }
+    .latest .wrapper {
+        width: 20%;
+    }
+    .latest .latestinfo {
+        width: 80%;
+    }
+}
+@media only screen and (max-width:460px) {
+    .latest {
+        height: 100%;
+    }
+    .latest .wrapper {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .latest .latestinfo {
+        width: 100%;
+    }
+    .latest .latestinfo h3 {
+        width: 100%;
+    }
+}
+.latestarticle {
+    height: 100%;
+    width: 100%;
+}
+.latestarticle .articles {
+    height: 100%;
+    width: 100%;
+}
+.artcoontainer .paper a {
+    font-size: 18px;
+    color: #222222;
+    font-weight: 700;
+}
+.artcoontainer .paper .author {
+    color: #222222;
+    font-weight: 600;
+}
+.artcoontainer .paper .other {
+    color: #222222;
+    font-weight: 700;
+}
+.artcoontainer .paper .other .date {
+    font-weight: 600;
+    border-left: 2px solid #025E8D;
+    padding-left: 6px;
+    margin-left: 6px;
+}
+.articles .allarticles button{
+    color: #025E8D;
+    padding: 10px 30px;
+    border: 2px solid #025E8D;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 30px;
+    background: white;
+}
+.articles .allarticles button iconify-icon{
+    font-size: 28px;
+    font-weight: 800;
+    height: 20px;
+}
+.otherinfo .issn {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.otherinfo .publisher .site a {
+    color: #222222;
+    font-weight: 600;
+}
+.otherinfo .copyright a  {
+    color: #222222;
+    font-weight: 600;
+}
+/* ---------------------
+Right content Starts
+--------------------- */
+.autoptions {
+    border: 1px solid  #F0F7FC;
+    border-radius: 10px;
+}
+.autoptions .option a{
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+.autoptions .option a p{
+    height: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+.autoptions .option a iconify-icon {
+    font-size: 28px;
+    padding: 8px 8px;
+    border-radius: 50%;
+    background: #F0F7FC;
+}
+.expoptions {
+    border: 1px solid  #F0F7FC;
+    border-radius: 10px;
+}
+.expoptions .option a{
+    height: 100%;
+    width: 100%;
+    color: black;
+}
+.expoptions .option a p{
+    height: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+}
+.expoptions .option a iconify-icon {
+    font-size: 28px;
+    padding: 8px 8px;
+    border-radius: 50%;
+    background: #F0F7FC;
+}
+/* ---------------------
+    Footer Starts
+--------------------- */
+.footer {
+    height: 100%;
+    width: 100%;
+    background: #01324b;
+}
+.footer .navlinks {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .navlinks a {
+    color: white;
+    font-size: 17px;
+}
+.footer .copyfooter {
+    width: 100%;
+}
+.footer .copyfooter a {
+    text-decoration: none;
+}
+.footer .copyfooter h3 {
+    color: white;
+}
+.footer .copyfooter p {
+    color: white;
+}
+@media only screen and (max-width:460px) {
+    .footer .navlinks {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

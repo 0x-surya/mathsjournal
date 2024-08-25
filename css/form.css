@@ -1,0 +1,192 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+/* ---------------------
+    Header Starts
+--------------------- */
+.header {
+    height: 100%;
+    width: 100%;
+    border-bottom:2px solid #01324b;
+}
+.header .topbar {
+    height: 80px;
+    width: 80%;
+}
+.topbar .logo a {
+    text-decoration: none;
+    color: #222222;
+    font-weight: 700;
+}
+.header hr {
+    color: #025E8D;
+    border: 1px solid #025E8D;
+    margin: 0px;
+}
+/* ---------------------
+    login Form Starts
+--------------------- */
+.login {
+    /* height: 88vh; */
+    width: 100%;
+    background: #DADADA;
+}
+.login .formcontainer {
+    height: 460px;
+    width: 80%;
+    padding: 16px 0px;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.login .formcontainer .note {
+    width: 80%;
+    height: 50px;
+    border: 1px solid #01324b;
+    border-bottom: 4px solid #01324b;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login .formcontainer .note p {
+    margin: 0px !important;
+    font-weight: 600;
+}
+.note p iconify-icon {
+    height: 18px;
+    margin: 0px 10px;
+    font-size: 30px;
+    color: #01324b;
+}
+.login .formcontainer h2 {
+    width: 80%;
+    margin: 0px;
+    text-align: left;
+}
+.login .formcontainer .loginform {
+    border: 2px solid #01324b;
+    height: 70%;
+    width: 80%;
+    border-radius: 16px;
+    background: #F8F8F8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.formcontainer .loginform label {
+    font-size: 22px;
+    font-weight: 700;
+    width: 70%;
+    text-align: left;
+}
+.formcontainer .loginform input {
+    height: 40px;
+    width: 70%;
+    border-radius: 6px;
+    font-size: 22px;
+    padding: 4px 6px;
+}
+.formcontainer .loginform button {
+    padding: 10px 26px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    width: 70%;
+    background: #01324b;
+    border: 1px solid #01324b;
+    border-radius: 20px;
+}
+.formcontainer .loginform button iconify-icon {
+    font-size: 30px;
+    height: 20px;
+}
+@media only screen and (max-width:768px) {
+    .login .formcontainer .note {
+        font-size: 14px;
+        border: 1px solid #01324b;
+        text-align: justify;
+        padding: 6px 10px;
+    }
+}
+@media only screen and (max-width:460px) {
+    .login .formcontainer .note {
+        height: 100%;
+        font-size: 14px;
+        border: 1px solid #01324b;
+        text-align: justify;
+        padding: 6px 10px;
+    }
+    .login .formcontainer .note p {
+        margin: 0px !important;
+        font-weight: 600;
+    }
+    .login .formcontainer h2 {
+        margin: 10px 0px;
+        font-size: 18px;
+    }
+    .login .formcontainer {
+        height: 100%;
+        margin: 20px 10px !important;
+    }
+    .formcontainer .loginform {
+        padding: 10px 20px !important;
+    }
+    .formcontainer .loginform label {
+        width: 100%;
+        font-size: 20px;
+        margin: 4px 0px;
+    }
+    .formcontainer .loginform input {
+        margin: 4px 0px;
+        width: 100%;
+    }
+    .formcontainer .loginform button {
+        width: 100%;
+        padding: 10px 12px;
+        margin: 4px 0px;
+    }
+}
+/* ---------------------
+    Footer Starts
+--------------------- */
+.footer {
+    height: 100%;
+    width: 100%;
+    background: #01324b;
+}
+.footer .navlinks {
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.footer .navlinks a {
+    color: white;
+    font-size: 17px;
+}
+.footer .copyfooter {
+    width: 100%;
+}
+.footer .copyfooter a {
+    text-decoration: none;
+}
+.footer .copyfooter h3 {
+    color: white;
+}
+.footer .copyfooter p {
+    color: white;
+}
+@media only screen and (max-width:460px) {
+    .footer .navlinks {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
