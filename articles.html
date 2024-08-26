@@ -83,7 +83,7 @@
       </nav>
       <div class="content d-flex justify-content-between align-items-center">
         <div class="bookwrapper1 d-flex justify-content-center align-items-center">
-          <a href=""><img src="https://media.springernature.com/w158/springer-static/cover-hires/journal/13226?as=webp" alt=""></a>
+          <a href=""><img src="./assets/newrains.svg" alt=""></a>
         </div>
         <div class="bookinfo d-flex justify-content-center align-items-start flex-column">
           <a href=""><h3>Newrains International Journal of Applied and Pure Mathematics</h3></a>
@@ -131,10 +131,14 @@
                     <h5>Sort by</h5>
                     <div class="dates">
                         <p>Date published:</p>
-                        <input type="radio" name="date" id="nto">
-                        <label for="nto">New to old</label>
-                        <input type="radio" name="date" id="otn" checked>
-                        <label for="otn">Old to new</label>
+                        <div>
+                          <input type="radio" name="date" id="nto">
+                          <label for="nto">New to old</label>
+                        </div>
+                        <div>
+                          <input type="radio" name="date" id="otn" checked>
+                          <label for="otn">Old to new</label>
+                        </div>
                     </div>            
                 </div>
                 <div class="col-md-3">
@@ -142,10 +146,9 @@
                 </div>
             </div>
           </div>
-          <hr>
-          <div class="latestarticle py-5">
+          <div class="latestarticle pt-3 pb-3">
             <div class="articles">
-              <h3>Latest articles</h3>
+              <p class="count">showing <span>1-50</span>of <span>1,277</span>articles</p>
               <div class="artcoontainer">
                 <hr>
                 <div class="paper">
@@ -167,67 +170,24 @@
                 </div>
                 <hr>
               </div>
-              <a href="" class="allarticles"><button>View all articles <iconify-icon icon="basil:arrow-right-solid"></iconify-icon></button></a>
             </div>
           </div>
-          <div class="otherinfo py-3">
-            <h3>Journal information</h3>
-            <div class="issn mt-3 mb-3">
-              <div class="electronics">
-                <h5>Electronic ISSN</h5>
-                <p>0975-7465</p>
-              </div>
-              <div class="print">
-                <h5>Print ISSN</h5>
-                <p>0019-5588</p>              
-              </div>
-            </div>
-            <!-- <div class="publisher mb-4">
-              <h5>Co-Publisher information</h5>
-              <p>Co-publication with Newrains</p>
-              <p class="site my-2">Visit Co-Publisher Site: <a href="https://www.insaindia.res.in/">Newrains</a></p>
-            </div> -->
-            <div class="abtract mb-4">
-              <h5>Abstracted and indexed in</h5>
-              <div class="row">
-                <div class="col-md-4">
-                  <p class="mb-2">BFI List</p>
-                  <p class="mb-2">Baidu</p>
-                  <p class="mb-2">CLOCKSS</p>
-                  <p class="mb-2">CNKI</p>
-                  <p class="mb-2">CNPIEC</p>
-                  <p class="mb-2">Dimensions</p>
-                  <p class="mb-2">EBSCO</p>
-                  <p class="mb-2">Google Scholar</p>
-                </div>
-                <div class="col-md-4">
-                  <p class="mb-2">INSPEC</p>
-                  <p class="mb-2"> class="mb-2"Japanese Science and Technology</p>
-                  <p class="mb-2">Agency (JST)</p>
-                  <p class="mb-2">Mathematical Reviews</p>
-                  <p class="mb-2">Naver</p>
-                  <p class="mb-2">OCLC WorldCat Discovery Service</p>
-                  <p class="mb-2">Portico</p>
-                  <p class="mb-2">ProQuest</p>
-                </div>
-                <div class="col-md-4">
-                  <p class="mb-2">SCImago</p>
-                  <p class="mb-2">SCOPUS</p>
-                  <p class="mb-2">Science Citation Index Expanded</p>
-                  <p class="mb-2">(SCIE)</p>
-                  <p class="mb-2">TD Net Discovery Service</p>
-                  <p class="mb-2">UGC-CARE List (India)</p>
-                  <p class="mb-2">Wanfang</p>
-                  <p class="mb-2">zbMATH</p>
-                </div>
-              </div>
-            </div>
-            <div class="copyright mb-4">
-              <h5>Copyright information</h5>
-              <a href="">Rights and permissions</a><br>
-              <a href="">Editorial policies</a>
-            </div>
-            <p class="copyright">&#169; Newrains International Journal of Applied and Pure Mathematics</p>
+          <div class="pagination mb-3 d-flex justify-content-center align-items-center">
+            <nav aria-label="...">
+              <ul class="pagination">
+                <li class="page-item disabled">
+                  <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item active" aria-current="page">
+                  <a class="page-link" href="#">2</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                  <a class="page-link" href="#">Next</a>
+                </li>
+              </ul>
+            </nav>
           </div>
         </div>
         <div class="col-12 col-lg-3">
@@ -257,7 +217,7 @@
           <h3 class="mt-4">Explore</h3>
           <div class="expoptions px-4 py-3">
             <div class="option articles">
-              <a href="" class="d-flex justify-content-between align-items-center">
+              <a href="./articles.html" class="d-flex justify-content-between align-items-center">
                 <p>Articles</p>
                 <iconify-icon icon="basil:arrow-right-solid"></iconify-icon>
               </a>

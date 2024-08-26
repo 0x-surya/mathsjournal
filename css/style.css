@@ -703,8 +703,8 @@ Articles Page
     margin: 0px 6px;
     font-weight: 700;
 }
-.articlecon .col-md-3 {
-    height: 100%;
+.articlefil .col-md-3 {
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -718,8 +718,32 @@ Articles Page
     border: 1px solid #01324b;
     border-radius: 20px;
 }
+.articlefil .col-md-3 a button iconify-icon {
+    height: 16px;
+}
+.content .pagination {
+    width: 100%;
+}
 @media only screen and (max-width:460px) {
     .articlecon {
         height: 100%;
+    }
+    .articlefil .volumes {
+        margin: 8px 0px;
+    }
+    .articlefil .dates {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 8px 0px;
+    }
+    .articlefil .col-md-5, .articlefil .col-md-3 {
+        border-left: 0px;
+    }
+    .articlefil .dates p{
+        width: 100%;
+        text-align: center;
+        margin-top: 16px;
     }
 }
