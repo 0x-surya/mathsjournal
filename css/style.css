@@ -747,3 +747,21 @@ Articles Page
         margin-top: 16px;
     }
 }
+/* ---------------------
+Volumes Page
+--------------------- */
+/* .volumes .issue{
+    border-bottom: 2px solid #01324b;
+} */
+.volumes .issueyear {
+    border-top: 1px solid #01324b;
+}
+.volumes .issueyear p a{
+    font-weight: 700;
+    color: #025E8D !important;
+}
+.volumes .issueyear p span{
+    border-left: 2px solid #01324b;
+    padding-left: 8px;
+    margin-left: 10px;
+}
